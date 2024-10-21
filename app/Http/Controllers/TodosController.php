@@ -16,6 +16,8 @@ class TodosController extends Controller
     }
     public function home()
     {
-        return view('/');
+        $todos = Todo::all();
+        return view('welcome',compact('todo'));
+        #activity 5
     }
 }
