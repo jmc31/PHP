@@ -23,19 +23,19 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($todos as $todo)
+            @foreach($todos as $Todo)
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    {{ $todo->id }}
+                    {{ $Todo->id }}
                 </th>
                 <td class="px-6 py-4">
-                    {{ $todo->name }}
+                    {{ $Todo->name }}
                 </td>
                 <td class="px-6 py-4">
-                    {{ $todo->description }}
+                    {{ $Todo->description }}
                 </td>
                 <td class="px-6 py-4">
-                    {{ $todo->completed ? 'Yes' : 'No' }}
+                    {{ $Todo->completed ? 'Yes' : 'No' }}
                 </td>
             </tr>
             @endforeach
