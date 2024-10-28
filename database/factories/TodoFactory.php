@@ -1,9 +1,9 @@
 <?php
-
+// activity 6
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-#activity factory
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Todo>
  */
@@ -17,9 +17,9 @@ class TodoFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word(),
+            'title' => $this->faker->sentence(3),
             'description' => $this->faker->paragraph(),
-            'completed' => $this->faker->boolean(50),
+            'completed' => $this->faker->boolean(50), 
         ];
     }
 }
